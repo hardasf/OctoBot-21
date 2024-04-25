@@ -1,4 +1,4 @@
-# ChatWithAiOfficial
+# Octobotv2.1
 
 ![logo](rejard/logo.jpg)
 
@@ -16,11 +16,12 @@ An Educational Messenger Bot Made with love aims to Help ppl for studies
  3. para maupdate ang cookie using the webview modify url sa dstryr_state.json
 
 ## Issues 
-1. Ang Dashboard na encrypted need mo gawan ulit😌
+1. Not Updated 🥴 Simple Bot
 2. yung fca Palitan mo
 3. update mo events ikaw na bahala batman🦀
+4. encrypt mo index.html mo sa pagecrypt or use env para matago password ng admin panel
 
-##Admin Password
+## Admin Password (Default)
 ```text
 rejardgwapodev69
 
