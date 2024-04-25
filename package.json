@@ -1,10 +1,10 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "OctoBot2.1",
+  "version": "2.1.4",
+  "description": "A Simple Bot with Webview Dashboard",
+  "main": "index.js",
   "scripts": {
-    "hard": "node app.js"
+    "hard": "node index.js"
   },
   "keywords": [],
   "author": "",
