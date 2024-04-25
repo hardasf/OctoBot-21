@@ -10,6 +10,8 @@ An Educational Messenger Bot Made with love aims to Help ppl for studies
 
 - **Facebook**: [https://facebook.com/rejardbentazarofficial](https://facebook.com/rejardbentazarofficial)
 
+- **Facebook Page**: [https://facebook.com/leechshares](https://facebook.com/leechshares)
+
 
 ## Installation
  1. FORK and Ilisan mo yung Appstate, cookie.json
@@ -22,6 +24,10 @@ An Educational Messenger Bot Made with love aims to Help ppl for studies
 4. encrypt mo index.html mo sa pagecrypt or use env para matago password ng admin panel
 
 ## Admin Password (Default)
+located at index.html sa <script> tag 
 ```text
 rejardgwapodev69
+
+```
+## For more info don't be shy to talk to me🥴
 
