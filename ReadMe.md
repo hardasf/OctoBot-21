@@ -23,6 +23,9 @@ An Educational Messenger Bot Made with love aims to Help ppl for studies
 3. update mo events ikaw na bahala batman🦀
 4. encrypt mo index.html mo sa pagecrypt or use env para matago password ng admin panel
 
+## Hmm.. para safe 
+palitan mo ang endpoint ng upload sa line 92 (index.js) tsaka sa index.html nadin🥴 
+
 ## Admin Password (Default)
 located at index.html sa <script> tag 
 ```text
