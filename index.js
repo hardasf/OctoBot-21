@@ -133,6 +133,7 @@ app.delete('/api/deleteFile/:fileName', (req, res) => {
   }
 });
 //END
+/*
 const dstryrStatePath = path.join(__dirname, './dstryr_state.json');
 
 try {
@@ -181,6 +182,41 @@ try {
 } catch (error) {
   console.error('Error reading dstryr_state.json:', error);
 }
+*/
+//Update No Need dstryristate safe nato
+login({ appState: JSON.parse(fs.readFileSync("cookie.json")) }, async (err, api) => {
+      try {
+        if (err) throw err;
+
+        logAppStateFound();
+
+        api.listenMqtt(async (err, event) => {
+          try {
+            if (err) throw err;
+
+            switch (event.type) {
+              case "message":
+                const sender = event.senderID;
+                const prefix = getPrefixList();
+
+                logReceivedMessage(sender, event.body);
+
+                if (prefix.includes(event.body[0])) {
+                  await processCommand(api, event, sender).catch(async (e) => {
+                    console.error('Error processing command:', e);
+                    api.sendMessage(`0x0f1: Application error\n0x0f2: ${e}`, event.threadID);
+                  });
+                }
+                break;
+            }
+          } catch (err) {
+            console.error('Error in message event:', err);
+          }
+        });
+      } catch (err) {
+        console.error('Error in login:', err);
+      }
+    });
 //listen to port
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
