@@ -14,8 +14,9 @@ An Educational Messenger Bot Made with love aims to Help ppl for studies
 
 
 ## Installation
- 1. FORK and Ilisan mo yung Appstate, cookie.json
- 3. para maupdate ang cookie using the webview modify url sa dstryr_state.json
+ 1. FORK and Ilisan mo yung Appstate, sa cookie.json
+2. pwede mo din palitan using the WebView need mo lang ilagay ang appstate sa cookie.json tas upload 
+
 
 ## Issues 
 1. Not Updated 🥴 Simple Bot
